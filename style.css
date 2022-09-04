@@ -57,6 +57,7 @@
   font-weight: 900;
   letter-spacing: 2px;
   padding: 0.7rem 0.5rem;
+  cursor: pointer;
 }
 .atis-checker-main .atis-checker-box-wrap .atis-checker-bin,
 .atis-checker-main .atis-checker-box-wrap .atis-generator-checker-button-wrap button {
@@ -87,6 +88,7 @@
   letter-spacing: 2px;
   padding: 0.5rem 0.7rem;
   margin: 0.5rem auto;
+  cursor: pointer;
 }
 .atis-checker-main .atis-checker-box-wrap .atis-checker-checker-button-wrap .atis-checker-ccn-btn {
   background-color: #8EF5D7;

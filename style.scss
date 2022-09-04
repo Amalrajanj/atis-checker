@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+$font-style :'Inter',
+sans-serif;
+
+@mixin flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-style;
+}
+
+.atis-checker-main {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('./images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flexcenter();
+    flex-direction: column;
+
+
+    .atis-checker-box-wrap {
+        width: 90%;
+        max-width: 450px;
+        min-height: 70vh;
+        background-color: rgba(255, 255, 255, 0.699);
+        border-radius: 10px;
+        margin: 1rem auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+
+        h2 {
+            margin: 1rem auto;
+        }
+
+        .textarea-wrap {
+            width: 100%;
+            @include flexcenter();
+            margin: .5rem auto;
+
+            textarea {
+                width: 95%;
+                margin: 1rem auto;
+                resize: none;
+                height: 150px;
+                border-radius: 7px;
+                border: 3px #6CD5D0 solid;
+            }
+        }
+
+        .atis-checker-bin,
+        .atis-checker-check,
+        .atis-checker-generate {
+            width: 95%;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            padding: .7rem .5rem;
+        }
+
+        .atis-checker-bin,
+        .atis-generator-checker-button-wrap button {
+            color: rgba(0, 0, 0, 0.359);
+            background-color: white;
+            border: 3px #6CD5D0 solid !important;
+        }
+
+        .atis-checker-check,
+        .atis-checker-generate {
+            background-color: #6CD5D0;
+        }
+
+        .atis-checker-generate {
+            margin: 1rem auto;
+        }
+
+        .atis-checker-button-wrap {
+            width: 95%;
+            margin: 1.5rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+
+            button {
+                border: none;
+                outline: none;
+                border-radius: 8px;
+                font-weight: 900;
+                letter-spacing: 2px;
+                padding: .5rem .7rem;
+                margin: .5rem auto;
+            }
+        }
+
+        .atis-checker-checker-button-wrap {
+            .atis-checker-ccn-btn {
+                background-color: #8EF5D7;
+            }
+
+            .atis-checker-cvv-btn {
+                background-color: #6DCDFE;
+            }
+
+            .atis-checker-dead-btn {
+                background-color: #F75578;
+            }
+        }
+    }
+}
+
+
+@media (min-width:'600px') {
+    .atis-checker-main {
+        flex-direction: row !important;
+
+        .atis-checker-box-wrap {
+            width: 48%;
+        }
+    }
+}
+
+@media (min-width:'900px') {
+    .atis-checker-main {
+
+        textarea,
+        .atis-checker-bin,
+        .atis-checker-check,
+        .atis-checker-generate {
+            width: 90% !important;
+        }
+    }
+}

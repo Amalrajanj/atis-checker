@@ -17,10 +17,20 @@
   justify-content: center;
   flex-direction: column;
 }
-.atis-checker-main .atis-checker-box-wrap {
+.atis-checker-main .atis-checker-page-title {
+  margin: 1.5rem auto;
+}
+.atis-checker-main .atis-checker-box-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap {
   width: 90%;
   max-width: 450px;
-  min-height: 70vh;
+  height: 500px;
   background-color: rgba(255, 255, 255, 0.699);
   border-radius: 10px;
   margin: 1rem auto;
@@ -29,83 +39,127 @@
   align-items: center;
   justify-content: flex-start;
 }
-.atis-checker-main .atis-checker-box-wrap h2 {
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap h2 {
   margin: 1rem auto;
 }
-.atis-checker-main .atis-checker-box-wrap .textarea-wrap {
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .textarea-wrap {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0.5rem auto;
 }
-.atis-checker-main .atis-checker-box-wrap .textarea-wrap textarea {
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .textarea-wrap textarea {
   width: 95%;
   margin: 1rem auto;
+  padding: 0.5rem 1rem;
   resize: none;
   height: 150px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-generator-bin,
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-input-wrap input,
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap textarea {
+  outline: none;
   border-radius: 7px;
   border: 3px #6CD5D0 solid;
 }
-.atis-checker-main .atis-checker-box-wrap .atis-checker-bin,
-.atis-checker-main .atis-checker-box-wrap .atis-checker-check,
-.atis-checker-main .atis-checker-box-wrap .atis-checker-generate {
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap textarea::-moz-placeholder {
+  opacity: 0.6;
+}
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap textarea:-ms-input-placeholder {
+  opacity: 0.6;
+}
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap textarea::placeholder {
+  opacity: 0.6;
+}
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-generator-bin {
   width: 95%;
-  border: none;
-  outline: none;
-  border-radius: 8px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  padding: 0.7rem 0.5rem;
-  cursor: pointer;
+  text-align: center;
+  font-weight: 800;
+  padding: 0.4rem 0.5rem;
+  letter-spacing: 1px;
 }
-.atis-checker-main .atis-checker-box-wrap .atis-checker-bin,
-.atis-checker-main .atis-checker-box-wrap .atis-generator-checker-button-wrap button {
-  color: rgba(0, 0, 0, 0.359);
-  background-color: white;
-  border: 3px #6CD5D0 solid !important;
-}
-.atis-checker-main .atis-checker-box-wrap .atis-checker-check,
-.atis-checker-main .atis-checker-box-wrap .atis-checker-generate {
-  background-color: #6CD5D0;
-}
-.atis-checker-main .atis-checker-box-wrap .atis-checker-generate {
-  margin: 1rem auto;
-}
-.atis-checker-main .atis-checker-box-wrap .atis-checker-button-wrap {
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-input-wrap {
   width: 95%;
-  margin: 1.5rem auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  margin: 1rem;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
 }
-.atis-checker-main .atis-checker-box-wrap .atis-checker-button-wrap button {
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-input-wrap input {
+  width: 30%;
+  display: block;
+  padding: 0.2rem 0.1rem;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-input-wrap input::-webkit-outer-spin-button,
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-input-wrap input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-input-wrap input[type=number] {
+  -moz-appearance: textfield;
+}
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-input-wrap input::-moz-placeholder {
+  opacity: 0.6;
+}
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-input-wrap input:-ms-input-placeholder {
+  opacity: 0.6;
+}
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-input-wrap input::placeholder {
+  opacity: 0.6;
+}
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-check,
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-generate {
+  background-color: #6CD5D0;
+  outline: none;
+  border: none;
+  width: 95%;
+  font-weight: 800;
+  padding: 0.5rem 0.5rem;
+  border-radius: 7px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-checker-button-wrap {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-checker-button-wrap button {
   border: none;
   outline: none;
   border-radius: 8px;
   font-weight: 900;
   letter-spacing: 2px;
   padding: 0.5rem 0.7rem;
-  margin: 0.5rem auto;
+  margin: 0.5rem 0;
   cursor: pointer;
 }
-.atis-checker-main .atis-checker-box-wrap .atis-checker-checker-button-wrap .atis-checker-ccn-btn {
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-checker-button-wrap .atis-checker-ccn-btn {
   background-color: #8EF5D7;
 }
-.atis-checker-main .atis-checker-box-wrap .atis-checker-checker-button-wrap .atis-checker-cvv-btn {
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-checker-button-wrap .atis-checker-cvv-btn {
   background-color: #6DCDFE;
 }
-.atis-checker-main .atis-checker-box-wrap .atis-checker-checker-button-wrap .atis-checker-dead-btn {
+.atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-checker-button-wrap .atis-checker-dead-btn {
   background-color: #F75578;
 }
 
 @media (min-width: 600px) {
-  .atis-checker-main {
+  .atis-checker-box-container {
     flex-direction: row !important;
   }
-  .atis-checker-main .atis-checker-box-wrap {
-    width: 48%;
+  .atis-checker-box-container .atis-checker-box-wrap {
+    width: 48% !important;
   }
 }
 @media (min-width: 900px) {

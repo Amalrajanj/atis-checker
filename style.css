@@ -51,7 +51,7 @@
   margin: 0.5rem auto;
 }
 .atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .textarea-wrap textarea {
-  width: 95%;
+  width: 90%;
   margin: 1rem auto;
   padding: 0.5rem 1rem;
   resize: none;
@@ -76,14 +76,14 @@
   opacity: 0.6;
 }
 .atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-generator-bin {
-  width: 95%;
+  width: 90%;
   text-align: center;
   font-weight: 800;
   padding: 0.4rem 0.5rem;
   letter-spacing: 1px;
 }
 .atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-input-wrap {
-  width: 95%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -121,7 +121,7 @@
   background-color: #6CD5D0;
   outline: none;
   border: none;
-  width: 95%;
+  width: 90%;
   font-weight: 800;
   padding: 0.5rem 0.5rem;
   border-radius: 7px;
@@ -129,7 +129,7 @@
   cursor: pointer;
 }
 .atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-checker-button-wrap {
-  width: 95%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;

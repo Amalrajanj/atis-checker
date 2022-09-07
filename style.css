@@ -18,7 +18,8 @@
   flex-direction: column;
 }
 .atis-checker-main .atis-checker-page-title {
-  margin: 1.5rem auto;
+  margin: 2rem auto;
+  font-size: 2.5rem;
 }
 .atis-checker-main .atis-checker-box-container {
   width: 100%;
@@ -135,6 +136,7 @@
   margin: 1rem;
 }
 .atis-checker-main .atis-checker-box-container .atis-checker-box-wrap .atis-checker-checker-button-wrap button {
+  width: 30%;
   border: none;
   outline: none;
   border-radius: 8px;
@@ -160,13 +162,5 @@
   }
   .atis-checker-box-container .atis-checker-box-wrap {
     width: 48% !important;
-  }
-}
-@media (min-width: 900px) {
-  .atis-checker-main textarea,
-.atis-checker-main .atis-checker-bin,
-.atis-checker-main .atis-checker-check,
-.atis-checker-main .atis-checker-generate {
-    width: 90% !important;
   }
 }/*# sourceMappingURL=style.css.map */

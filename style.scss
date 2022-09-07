@@ -27,7 +27,8 @@ sans-serif;
     flex-direction: column;
 
     .atis-checker-page-title {
-        margin: 1.5rem auto;
+        margin: 2rem auto;
+        font-size: 2.5rem;
     }
 
     .atis-checker-box-container {
@@ -150,6 +151,7 @@ sans-serif;
                 margin: 1rem;
 
                 button {
+                    width: 30%;
                     border: none;
                     outline: none;
                     border-radius: 8px;
@@ -190,13 +192,13 @@ sans-serif;
 }
 
 @media (min-width:'900px') {
-    .atis-checker-main {
+    // .atis-checker-main {
 
-        textarea,
-        .atis-checker-bin,
-        .atis-checker-check,
-        .atis-checker-generate {
-            width: 90% !important;
-        }
-    }
+    //     textarea,
+    //     .atis-checker-bin,
+    //     .atis-checker-check,
+    //     .atis-checker-generate {
+    //         width: 90% !important;
+    //     }
+    // }
 }
